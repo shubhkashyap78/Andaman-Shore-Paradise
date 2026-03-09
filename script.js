@@ -305,6 +305,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
     const topBar = document.querySelector('.top-bar');
+    const scrollToTop = document.querySelector('.scroll-to-top');
     
     if (window.scrollY > 50) {
         topBar.style.transform = 'translateY(-100%)';
@@ -312,6 +313,12 @@ window.addEventListener('scroll', () => {
     } else {
         topBar.style.transform = 'translateY(0)';
         header.style.top = '40px';
+    }
+    
+    if (window.scrollY > 300) {
+        scrollToTop.classList.add('show');
+    } else {
+        scrollToTop.classList.remove('show');
     }
 });
 

@@ -22,6 +22,7 @@
                 <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://wa.me/919332446268" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
     </div>
@@ -75,8 +76,17 @@
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="date" name="departure_date" placeholder="Departure Date" required>
+                <input type="number" name="no_of_persons" placeholder="No. of Persons" min="1" required>
                 <select name="package" required>
                     <option value="">Select Package</option>
+                    <option value="3n4d">Honeymoon Packages</option>
+                    <option value="4n5d">Family Package</option>
+                    <option value="5n6d">Group Package</option>
+                    <option value="5n6d">Andaman View</option>
+                </select>
+                <select name="package" required>
+                    <option value="">Duration</option>
                     <option value="3n4d">3 Nights 4 Days</option>
                     <option value="4n5d">4 Nights 5 Days</option>
                     <option value="5n6d">5 Nights 6 Days</option>
@@ -213,7 +223,7 @@
                         <div class="info-item">
                             <i class="fas fa-phone"></i>
                             <div>
-                                <h4>Phone</h4>
+                                <h4>Phone / WhatsApp</h4>
                                 <p>+91-9332446268</p>
                             </div>
                         </div>
@@ -221,14 +231,14 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <h4>Email</h4>
-                                <p>info@andamanshoreparadise.com</p>
+                                <p>andamanshoreparadise@gmail.com</p>
                             </div>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <h4>Location</h4>
-                                <p>Port Blair, Andaman & Nicobar Islands</p>
+                                <p>Bathu Basti, Post office Rd., Port Blair, South Andaman. pin-744105</p>
                             </div>
                         </div>
                     </div>
@@ -239,20 +249,23 @@
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <input type="tel" name="phone" placeholder="Phone Number" required>
+                        <input type="date" name="departure_date" placeholder="Departure Date" required>
+                        <input type="number" name="no_of_persons" placeholder="No. of Persons" min="1" required>
                         <select name="package" required>
                             <option value="">Select Package</option>
                             <option value="3n4d">Honeymoon Packages</option>
-                            <option value="4n5d">Adventure Package</option>
-                            <option value="5n6d">Vacation Package</option>
-                            <option value="custom">Custom Package</option>
+                            <option value="4n5d">Family Package</option>
+                            <option value="5n6d">Group Package</option>
+                            <option value="custom">Andaman View</option>
                         </select>
                          <select name="duration" required>
                             <option value="">Select Duration</option>
                             <option value="3n4d">3 Nights 4 Days</option>
                             <option value="4n5d">4 Nights 5 Days</option>
                             <option value="5n6d">5 Nights 6 Days</option>
+                            <option value="5n6d">6 Nights 7 Days</option>
                         </select>
-                        <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+                        <textarea name="message" placeholder="Your Message" rows="3"></textarea>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
@@ -271,6 +284,7 @@
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/919332446268" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
@@ -295,16 +309,24 @@
                     <h4>Contact</h4>
                     <ul>
                         <li><i class="fas fa-phone"></i> +91-9332446268</li>
-                        <li><i class="fas fa-envelope"></i> info@andamanshoreparadise.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Port Blair, A&N Islands</li>
+                        <li><i class="fas fa-envelope"></i> andamanshoreparadise@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Bathu Basti, Post office Rd., Port Blair, South Andaman. pin-744105</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Andaman Shore Paradise. All Rights Reserved.</p>
+                <p>&copy; 2024 Andaman Shore Paradise. All Rights Reserved. | Developed by <a href="https://www.jrtechnology.in/" target="_blank" style="color: var(--primary-color); text-decoration: none;">Jr Technology</a></p>
             </div>
         </div>
     </footer>
+
+    <a href="https://wa.me/919332446268" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="#home" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>
