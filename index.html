@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andaman Shore Paradise - Discover Paradise</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="top-bar-phone">
+                <i class="fas fa-phone"></i>
+                <span>+91-9332446268</span>
+            </div>
+            <div class="top-bar-social">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-umbrella-beach"></i>
+                <span>Andaman Shore Paradise</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#hotels">Hotels</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-carousel">
+            <div class="carousel-item active">
+                <img src="andaman1.jpg" alt="Andaman 1">
+            </div>
+            <div class="carousel-item">
+                <img src="andaman2.jpg" alt="Andaman 2">
+            </div>
+            <div class="carousel-item">
+                <img src="andaman3.jpg" alt="Andaman 3">
+            </div>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Paradise</h1>
+            <p class="hero-subtitle">Discover the Beauty of Andaman & Nicobar Islands</p>
+            <div class="hero-buttons">
+                <a href="#packages" class="btn btn-primary">Explore Packages</a>
+                <a href="#contact" class="btn btn-secondary">Book Now</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Andaman Islands</h2>
+                <p>Experience the untouched beauty of nature</p>
+            </div>
+            <div class="about-content">
+                <div class="about-images">
+                    <div class="about-img-large">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Andaman Beach">
+                    </div>
+                    <div class="about-img-small">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" alt="Island View">
+                    </div>
+                    <div class="about-img-small">
+                        <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=400" alt="Water Activities">
+                    </div>
+                </div>
+                <div class="about-text-content">
+                    <div class="about-text">
+                        <h3>Discover Paradise on Earth</h3>
+                        <p>The Andaman and Nicobar Islands are a group of islands at the juncture of the Bay of Bengal and the Andaman Sea. Known for their pristine beaches, crystal-clear waters, and rich marine life, these islands offer an unforgettable tropical paradise experience.</p>
+                        <p>From historical landmarks to adventure sports, from serene beaches to vibrant coral reefs, Andaman has something for everyone.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>572</h3>
+                            <p>Islands</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>1000+</h3>
+                            <p>Marine Species</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Beaches</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="destinations" class="destinations-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Destinations</h2>
+                <p>Explore the most beautiful places in Andaman</p>
+            </div>
+            <div class="destinations-grid" id="destinationsGrid"></div>
+        </div>
+    </section>
+
+    <section id="packages" class="packages-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tour Packages</h2>
+                <p>Choose your perfect getaway</p>
+            </div>
+            <div class="packages-grid" id="packagesGrid"></div>
+        </div>
+    </section>
+
+    <section id="hotels" class="hotels-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Premium Hotels and Resorts</h2>
+                <p>Stay at the finest accommodations</p>
+            </div>
+            <div class="hotels-grid" id="hotelsGrid"></div>
+        </div>
+    </section>
+
+    <section class="video-story-section">
+        <div class="container">
+            <div class="video-story-content">
+                <div class="video-story-text">
+                    <h2>Watch Our Story</h2>
+                    <h3>Unforgettable Travel Experiences</h3>
+                    <p>Get Your Guide</p>
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                </div>
+                <div class="video-story-player">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600" alt="Andaman Story">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities" class="activities-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Top Activities</h2>
+                <p>Exciting experiences await you</p>
+            </div>
+            <div class="activities-grid" id="activitiesGrid"></div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Travelers Say</h2>
+                <p>Real experiences from real travelers</p>
+            </div>
+            <div class="testimonials-grid" id="testimonialsGrid"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Ready to start your adventure? Contact us today!</p>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91-9332446268</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@andamanshoreparadise.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Port Blair, Andaman & Nicobar Islands</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                   <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="4fd37b34-62b9-48fb-9ec2-8cba3dd6e7ee">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                        <select name="package" required>
+                            <option value="">Select Package</option>
+                            <option value="3n4d">3 Nights 4 Days</option>
+                            <option value="4n5d">4 Nights 5 Days</option>
+                            <option value="5n6d">5 Nights 6 Days</option>
+                            <option value="custom">Custom Package</option>
+                        </select>
+                        <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Andaman Shore Paradise</h3>
+                    <p>Your trusted travel partner for exploring the beautiful Andaman Islands.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Hotel Booking</a></li>
+                        <li><a href="#">Ferry Tickets</a></li>
+                        <li><a href="#">Tour Packages</a></li>
+                        <li><a href="#">Water Sports</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91-9332446268</li>
+                        <li><i class="fas fa-envelope"></i> info@andamanshoreparadise.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Port Blair, A&N Islands</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Andaman Shore Paradise. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
