@@ -40,7 +40,8 @@ const activities = [
         location: "Swaraj Dweep(Havelock Island)",
         place: "Elephant Beach, Havelock",
         tag: "Romantic",
-        icon: "fa-water"
+        icon: "fa-water",
+        image: "tp andaman1.jpg"
     },
     {
         title: "Island Hopping (North Bay, Ross Island)",
@@ -49,8 +50,9 @@ const activities = [
         groupType: "Large group cruise",
         location: "Sri Vijaya Puram(Port Blair)",
         place: "Port Blair",
-        tag: "Water sports",
-        icon: "fa-ship"
+        tag: "Romantic",
+        icon: "fa-ship",
+        image: "tp2 andaman.jpg"
     },
     {
         title: "Scuba Diving (Shallow Water)",
@@ -60,7 +62,8 @@ const activities = [
         location: "Swaraj Dweep(Havelock Island)",
         place: "Elephant Beach, Havelock",
         tag: "Adventure",
-        icon: "fa-person-swimming"
+        icon: "fa-person-swimming",
+        image: "tp3 andaman.jpg"
     }
 ];
 
@@ -117,7 +120,7 @@ const hotels = [
         reviews: 150,
         badge: "Premium",
         tag: "FAMILY CHOICE",
-        image: "andaman6.jpeg"
+        image: "andaman hotels1.jpg"
     },
     {
         name: "Barefoot at Havelock",
@@ -126,7 +129,7 @@ const hotels = [
         reviews: 280,
         badge: "Luxury",
         tag: "LUXURY",
-        image: "andaman7.jpeg"
+        image: "andaman hotesl2.jpg"
     },
     {
         name: "Silver Sand Neil Island",
@@ -135,7 +138,7 @@ const hotels = [
         reviews: 120,
         badge: "Premium",
         tag: "BEACHFRONT",
-        image: "andaman8.jpeg"
+        image: "andaman hotels3.jpg"
     }
 ];
 
@@ -353,28 +356,32 @@ function renderActivities() {
     grid.innerHTML = activities.map(activity => `
         <div class="activity-card">
             <div class="activity-tag">${activity.tag}</div>
-            <div class="activity-icon">
-                <i class="fas ${activity.icon}"></i>
-            </div>
-            <h3>${activity.title}</h3>
-            <p>${activity.description}</p>
-            <div class="activity-details">
-                <div class="detail-item">
-                    <i class="far fa-clock"></i>
-                    <span>${activity.duration}</span>
+            <img src="${activity.image}" alt="${activity.title}" class="activity-img">
+            <div class="activity-content">
+                <div class="activity-icon">
+                    <i class="fas ${activity.icon}"></i>
                 </div>
-                <div class="detail-item">
-                    <i class="fas fa-users"></i>
-                    <span>${activity.groupType}</span>
+                <h3>${activity.title}</h3>
+                <p>${activity.description}</p>
+                <div class="activity-details">
+                    <div class="detail-item">
+                        <i class="far fa-clock"></i>
+                        <span>${activity.duration}</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-users"></i>
+                        <span>${activity.groupType}</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>${activity.location}</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-location-dot"></i>
+                        <span>${activity.place}</span>
+                    </div>
                 </div>
-                <div class="detail-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>${activity.location}</span>
-                </div>
-                <div class="detail-item">
-                    <i class="fas fa-location-dot"></i>
-                    <span>${activity.place}</span>
-                </div>
+                <a href="#contact" class="activity-btn">Book Now</a>
             </div>
         </div>
     `).join('');
