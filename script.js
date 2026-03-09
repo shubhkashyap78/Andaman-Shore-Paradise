@@ -2,32 +2,32 @@ const destinations = [
     {
         name: "Sri Vijaya Puram (Port Blair)",
         description: "The capital city and gateway to the islands, rich with history.",
-        image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500"
+        image: "andaman4.jpeg"
     },
     {
         name: "Swaraj Dweep (Havelock Island)",
         description: "Renowned for Radhanagar Beach, one of Asia's best beaches.",
-        image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500"
+        image: "andaman5.jpeg"
     },
     {
         name: "Shaheed Dweep (Neil Island)",
         description: "A serene paradise known for its natural bridges and relaxed vibe.",
-        image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500"
+        image: "andaman6.jpeg"
     },
     {
         name: "North Bay Island",
         description: "Famous for coral viewing, snorkeling, and water sports.",
-        image: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=500"
+        image: "andaman7.jpeg"
     },
     {
         name: "Baratang Island",
         description: "Famous for limestone caves, mangrove creeks, and tribal heritage.",
-        image: "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=500"
+        image: "andaman8.jpeg"
     },
     {
         name: "Ross Island",
         description: "Historical island with British colonial ruins and natural beauty.",
-        image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=500"
+        image: "andaman9.jpeg"
     }
 ];
 
@@ -117,7 +117,7 @@ const hotels = [
         reviews: 150,
         badge: "Premium",
         tag: "FAMILY CHOICE",
-        image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500"
+        image: "andaman6.jpeg"
     },
     {
         name: "Barefoot at Havelock",
@@ -126,7 +126,7 @@ const hotels = [
         reviews: 280,
         badge: "Luxury",
         tag: "LUXURY",
-        image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=500"
+        image: "andaman7.jpeg"
     },
     {
         name: "Silver Sand Neil Island",
@@ -135,7 +135,7 @@ const hotels = [
         reviews: 120,
         badge: "Premium",
         tag: "BEACHFRONT",
-        image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=500"
+        image: "andaman8.jpeg"
     }
 ];
 
@@ -145,7 +145,7 @@ const packages = [
         description: "Perfect for a quick getaway covering Port Blair and Havelock Island.",
         price: "₹15,999",
         duration: "3N/4D",
-        image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500",
+        image: "andaman10.jpeg",
         icon: "fa-umbrella-beach",
         rating: 4.5,
         reviews: 120
@@ -155,7 +155,7 @@ const packages = [
         description: "Explore Port Blair, Havelock, and Neil Island with water activities.",
         price: "₹22,999",
         duration: "4N/5D",
-        image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500",
+        image: "andaman11.jpeg",
         icon: "fa-ship",
         rating: 4.8,
         reviews: 200
@@ -165,7 +165,7 @@ const packages = [
         description: "Complete Andaman experience with all major islands and attractions.",
         price: "₹28,999",
         duration: "5N/6D",
-        image: "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=500",
+        image: "andaman12.jpeg",
         icon: "fa-island-tropical",
         rating: 4.7,
         reviews: 180
@@ -175,7 +175,7 @@ const packages = [
         description: "Romantic package with luxury stays and candlelight dinners.",
         price: "₹42,999",
         duration: "5N/6D",
-        image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=500",
+        image: "andaman9.jpeg",
         icon: "fa-heart",
         rating: 5.0,
         reviews: 250
@@ -185,7 +185,7 @@ const packages = [
         description: "Thrilling water sports, scuba diving, and jungle trekking.",
         price: "₹32,999",
         duration: "4N/5D",
-        image: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=500",
+        image: "andaman4.jpeg",
         icon: "fa-person-hiking",
         rating: 4.6,
         reviews: 150
@@ -195,7 +195,7 @@ const packages = [
         description: "Family-friendly itinerary with activities for all age groups.",
         price: "₹26,999",
         duration: "5N/6D",
-        image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=500",
+        image: "andaman5.jpeg",
         icon: "fa-people-group",
         rating: 4.4,
         reviews: 130
@@ -236,8 +236,8 @@ function renderPackages() {
                 <h3>${pkg.title}</h3>
                 <p>${pkg.description}</p>
                 <div class="package-footer">
-                    <div class="package-price">${pkg.price}</div>
                     <div class="package-duration">${pkg.duration}</div>
+                    <a href="#contact" class="enquiry-btn">Enquiry Now</a>
                 </div>
             </div>
         </div>
@@ -280,6 +280,15 @@ if (form) {
         } catch (error) {
             alert('Error submitting form. Please try again.');
         }
+    });
+}
+
+const heroForm = document.getElementById('heroBookingForm');
+if (heroForm) {
+    heroForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thank you for your inquiry! We will contact you shortly.');
+        heroForm.reset();
     });
 }
 

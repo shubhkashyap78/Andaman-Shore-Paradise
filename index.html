@@ -6,6 +6,9 @@
     <title>Andaman Shore Paradise - Discover Paradise</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="top-bar">
@@ -59,12 +62,27 @@
             <div class="video-overlay"></div>
         </div>
         <div class="hero-content">
-            <h1 class="hero-title">Welcome to Paradise</h1>
+            <h1 class="hero-title">Welcome to Andaman Shore Paradise</h1>
             <p class="hero-subtitle">Discover the Beauty of Andaman & Nicobar Islands</p>
             <div class="hero-buttons">
                 <a href="#packages" class="btn btn-primary">Explore Packages</a>
                 <a href="#contact" class="btn btn-secondary">Book Now</a>
             </div>
+        </div>
+        <div class="hero-form">
+            <form id="heroBookingForm">
+                <h3>Quick Booking</h3>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <select name="package" required>
+                    <option value="">Select Package</option>
+                    <option value="3n4d">3 Nights 4 Days</option>
+                    <option value="4n5d">4 Nights 5 Days</option>
+                    <option value="5n6d">5 Nights 6 Days</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
         <div class="scroll-indicator">
             <i class="fas fa-chevron-down"></i>
@@ -80,13 +98,13 @@
             <div class="about-content">
                 <div class="about-images">
                     <div class="about-img-large">
-                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Andaman Beach">
+                        <img src="andaman9.jpeg" alt="Andaman Beach">
                     </div>
                     <div class="about-img-small">
-                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" alt="Island View">
+                        <img src="andaman10.jpeg" alt="Island View">
                     </div>
                     <div class="about-img-small">
-                        <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=400" alt="Water Activities">
+                        <img src="andaman11.jpeg" alt="Water Activities">
                     </div>
                 </div>
                 <div class="about-text-content">
@@ -155,7 +173,7 @@
                 </div>
                 <div class="video-story-player">
                     <div class="video-thumbnail">
-                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600" alt="Andaman Story">
+                        <img src="andaman12.jpeg" alt="Andaman Story">
                         <div class="play-button">
                             <i class="fas fa-play"></i>
                         </div>
@@ -223,10 +241,16 @@
                         <input type="tel" name="phone" placeholder="Phone Number" required>
                         <select name="package" required>
                             <option value="">Select Package</option>
+                            <option value="3n4d">Honeymoon Packages</option>
+                            <option value="4n5d">Adventure Package</option>
+                            <option value="5n6d">Vacation Package</option>
+                            <option value="custom">Custom Package</option>
+                        </select>
+                         <select name="duration" required>
+                            <option value="">Select Duration</option>
                             <option value="3n4d">3 Nights 4 Days</option>
                             <option value="4n5d">4 Nights 5 Days</option>
                             <option value="5n6d">5 Nights 6 Days</option>
-                            <option value="custom">Custom Package</option>
                         </select>
                         <textarea name="message" placeholder="Your Message" rows="4"></textarea>
                         <button type="submit" class="btn btn-primary">Send Message</button>
