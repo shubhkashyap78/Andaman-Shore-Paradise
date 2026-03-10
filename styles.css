@@ -22,10 +22,9 @@ body {
     overflow-x: hidden;
 }
 
-/* all heading tags use a different font; applying italic style so they appear italicized */
+/* all heading tags use a fantasy font (Pacifico) for a decorative look */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif; /* you can swap this for another italic font if desired */
-    font-style: italic;
+    font-family: 'cursive', cursive;
 }
 
 .container {
