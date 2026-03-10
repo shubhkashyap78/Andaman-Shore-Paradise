@@ -16,10 +16,16 @@ html {
 }
 
 body {
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Arial', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
+}
+
+/* all heading tags use a different font; applying italic style so they appear italicized */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif; /* you can swap this for another italic font if desired */
+    font-style: italic;
 }
 
 .container {
